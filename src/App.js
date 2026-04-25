@@ -83,7 +83,7 @@ export default function ShoppingApp() {
 
       {/* Regulars Dashboard */}
       <div style={{ background: '#eee', padding: '15px', borderRadius: '8px' }}>
-        <p><strong>Quick Add</strong></p>
+        <p><strong>Favourites</strong></p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
           {regulars.map((reg, idx) => (
             <div key={idx} style={{ background: '#ddd', padding: '5px 10px', borderRadius: '20px' }}>
@@ -93,8 +93,8 @@ export default function ShoppingApp() {
           ))}
         </div>
         <div style={{ marginTop: '10px' }}>
-          <input value={regInput} onChange={e => setRegInput(e.target.value)} placeholder="New Quick Add..." />
-          <button onClick={addRegular}>Create</button>
+          <input value={regInput} onChange={e => setRegInput(e.target.value)} placeholder="Pin to Favourites..." />
+          <button onClick={addRegular}>Pin</button>
         </div>
       </div>
 
